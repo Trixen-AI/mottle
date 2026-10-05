@@ -1,0 +1,8 @@
+@import '@fontsource/tektur/400.css';
+@import '@fontsource/lexend/300.css';
+@import '@fontsource/lexend/400.css';
+@import '@fontsource/lexend/700.css';
+@import 'slick-carousel/slick/slick.css';
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/sections.css';

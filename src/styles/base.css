@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text);
+  color: var(--paper);
+  background-color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body.is-locked {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+h1 { font-size: 64px; line-height: 110%; }
+h2 { font-size: 64px; line-height: 90%; }
+h3 { font-size: 56px; line-height: 110%; }
+h4 { font-size: 32px; line-height: 110%; }
+h5 { font-size: 28px; line-height: 120%; }
+
+p,
+a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+canvas,
+video {
+  display: block;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 1px solid var(--lichen);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Layout helpers */
+.wrap {
+  width: 90%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.screen {
+  height: 100vh;
+  min-height: 640px;
+  overflow: hidden;
+  position: relative;
+}
+
+.split {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.col-30 { width: 30%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-70 { width: 70%; }
+
+/* Entrance: elements inside an .reveal section fade and travel in when it enters the viewport */
+.rv {
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+}
+.rv-up { top: 50px; }
+.rv-right { right: -100px; }
+.reveal.is-in .rv { opacity: 1; }
+.reveal.is-in .rv-up { top: 0; }
+.reveal.is-in .rv-right { right: 0; }
+.d-01 { transition-delay: 0.1s; }
+.d-03 { transition-delay: 0.3s; }
+
+@media (max-width: 642px) {
+  p { font-size: 14px; line-height: 18px; }
+  h2 { font-size: 48px; }
+  h3 { font-size: 36px; }
+  h5 { font-size: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}

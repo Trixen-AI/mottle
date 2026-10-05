@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mottle | Private Stablecoin Payments on Solana</title>
+    <meta
+      name="description"
+      content="Mottle is the privacy layer for Solana payments. Send USDC and USDT, create payment links anyone can pay, check how exposed your wallet is, and share signed reports only when you choose."
+    />
+    <meta name="keywords" content="Mottle, Solana privacy, private payments, USDC, USDT, stablecoin payments, Solana Pay, payment links, wallet privacy, selective disclosure" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Mottle" />
+    <link rel="canonical" href="https://mottleprotocol.xyz/" />
+
+    <!-- Icons + theme -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0a0b0a" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mottle" />
+    <meta property="og:url" content="https://mottleprotocol.xyz/" />
+    <meta property="og:title" content="Mottle | Private Stablecoin Payments on Solana" />
+    <meta property="og:description" content="Pay anyone. Leave no line back to you. The privacy layer for USDC and USDT payments on Solana." />
+    <meta property="og:image" content="https://mottleprotocol.xyz/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mottle: Pay anyone. Leave no line back to you. Private stablecoin payments on Solana." />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Mottle_xyz" />
+    <meta name="twitter:creator" content="@Mottle_xyz" />
+    <meta name="twitter:title" content="Mottle | Private Stablecoin Payments on Solana" />
+    <meta name="twitter:description" content="Pay anyone. Leave no line back to you. The privacy layer for USDC and USDT payments on Solana." />
+    <meta name="twitter:image" content="https://mottleprotocol.xyz/og-image.png" />
+    <meta name="twitter:image:alt" content="Mottle: Pay anyone. Leave no line back to you." />
+
+    <!-- Faster first connection to the Solana RPC used by the app -->
+    <link rel="preconnect" href="https://rpc.walletconnect.org" crossorigin />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://mottleprotocol.xyz/#org",
+            "name": "Mottle",
+            "url": "https://mottleprotocol.xyz/",
+            "logo": "https://mottleprotocol.xyz/brand/logo-500.png",
+            "sameAs": ["https://x.com/Mottle_xyz"],
+            "email": "security@mottleprotocol.xyz"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mottleprotocol.xyz/#website",
+            "name": "Mottle",
+            "url": "https://mottleprotocol.xyz/",
+            "publisher": { "@id": "https://mottleprotocol.xyz/#org" }
+          },
+          {
+            "@type": "WebApplication",
+            "name": "Mottle Wallet",
+            "url": "https://mottleprotocol.xyz/app",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "description": "Send USDC and USDT on Solana with a privacy check before you sign, create Solana Pay payment links, review your wallet's exposure and share signed disclosure reports.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "publisher": { "@id": "https://mottleprotocol.xyz/#org" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>Mottle needs JavaScript to run. Private stablecoin payments on Solana: mottleprotocol.xyz</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

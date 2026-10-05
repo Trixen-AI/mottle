@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Payment pages are personal one-off requests: keep them out of search results
+Disallow: /pay
+
+Sitemap: https://mottleprotocol.xyz/sitemap.xml
